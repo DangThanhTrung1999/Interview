@@ -1,0 +1,128 @@
+.banner-wrapper {
+    width: 100%;
+    background: url('../../assets/img/Banner.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+.banner-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    width: 90%;
+    height: 685px;
+    flex-direction: column;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.banner-text-group {
+    width: 35%;
+}
+
+.banner-title {
+    width: 420px;
+    height: 162px;
+}
+
+.banner-time {
+    display: flex;
+    flex-direction: row;
+    font-weight: 700;
+    justify-content: space-between;
+}
+
+.banner-item {
+    margin-bottom: 40px;
+}
+
+.banner-dot {
+    transform: translateY(-7%);
+}
+
+.banner-lorem {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.banner-icon {
+    margin: 20px 0 50px 0;
+    width: 40px;
+    height: 15px;
+}
+
+.banner-btn-group {
+    display: flex;
+    flex-direction: row;
+    width: 22%;
+    justify-content: space-between;
+}
+
+.banner-btn {
+    border-radius: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    justify-content: center;
+    display:flex;
+    flex-direction: column;
+}
+
+.banner-btn:first-child {
+    background-color: #EF854E;
+    padding: 10px 40px;
+}
+
+.banner-btn:last-child {
+    border: 2px solid #EF854E;
+    padding: 10px 20px;
+}
+
+/* @media only screen and (min-width: 1440px) {
+    .banner-container{ 
+    }
+} */
+@media only screen and (max-width: 500px) {
+    .banner-wrapper {
+        background-size: 100% 100%;
+    }
+
+    .banner-container {
+        padding: 100px 0 100px;
+        height: fit-content;
+        width: 95%;
+    }
+
+    .banner-title {
+        width: 180px;
+        height: 69px;
+    }
+
+    .banner-text-group {
+        width: 90%;
+    }
+
+    .banner-time {
+        font-size: 14px;
+    }
+
+    .banner-lorem {
+        text-overflow: ellipsis;
+        font-weight: 200;
+        font-size: 15px;
+        width: 100%;
+        overflow: hidden;
+        -webkit-line-clamp: 2;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        white-space: normal;
+    }
+    .banner-btn-group {
+        width: 75%;
+    }
+    .banner-btn:first-child {
+        padding: 10px 40px;
+    }
+    
+    .banner-btn:last-child {
+        padding: 10px 30px;
+    }
+}

@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.home{
+    width: 100%;
+    height: 100%;
+}
+
+.layer{
+    background: #333;
+    opacity: 0.98;
+    margin: 0 auto;
+    height: fit-content;
+    position: absolute;
+    top:78px;
+    left: 0;
+    right:0;
+    bottom: 0;
+    z-index: 10;
+    border-radius: 0 0 5px 5px;
+}
+.layer-item{
+    color: #ffffff;
+    border-bottom: 1px solid rgba(163, 128, 128, 0.411);
+    padding: 10px 0;
+    font-weight: bold;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,134 @@
+.movie__carousel {
+  padding-top: 40px;
+  width: 100%;
+  padding-bottom: 100px;
+  background-image: url("../../assets/img/image7.png"), linear-gradient(#000000, #319dd1);
+}
+
+.movie__carousel-container {
+  width: 90%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.movie__carousel-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.movie__carousel-title {
+  display: flex;
+}
+
+.title-item {
+  font-size: 24px;
+  color: #ccc;
+  letter-spacing: 0.11px;
+  line-height: 30px;
+  font-family: "Montserrat";
+  align-items: center;
+  font-weight: 700;
+  margin-right: 59px;
+}
+
+.title-item.active {
+  color: #ffffff;
+  border-bottom: 2px solid #ff7e3e;
+}
+
+.arrow-transfer {
+  display: flex;
+}
+
+.arrow {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  display: none;
+}
+
+.arrow img {
+  width: 100%;
+  height: 100%;
+}
+
+.movie__carousel-bottom {
+  padding-top: 30px;
+}
+
+.movie__image {
+  width: 330px !important;
+  height: 285px;
+}
+
+.slider-movie {
+  overflow: visible;
+}
+
+.slider-movie img {
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.slick-arrow {
+  position: absolute !important;
+  top: -50px !important;
+}
+
+.slick-next {
+  right: 0 !important;
+}
+
+.slick-prev {
+  right: 30px !important;
+  left: auto !important;
+  background-image: url("../../assets/img/chevron-right.png");
+}
+
+.slick-next {
+  left: auto !important;
+  background-image: url("../../assets/img/chevron-left.png");
+}
+
+.slick-prev::before,
+.slick-next::before {
+  content: "" !important;
+}
+
+.slick-next:focus,
+.slick-next:hover,
+.slick-prev:focus,
+.slick-prev:hover {
+  color: #ffffff !important;
+  background: 1 1;
+}
+
+@media only screen and (max-width: 500px) {
+  .movie__carousel{
+    padding-bottom:50px
+  }
+  .movie__carousel-container {
+    width: 95%;
+  }
+
+  .movie__image {
+    padding-right: 10px!important;
+    width: 150px !important;
+    height: 120px !important;
+  }
+
+  .title-item {
+    font-size: 20px;
+  }
+
+  .slick-next {
+    display: none !important;
+  }
+
+  .slick-prev {
+    display: none !important;
+  }
+}

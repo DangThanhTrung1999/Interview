@@ -1,0 +1,131 @@
+.footer {
+  background-color: #14171d;
+  width: 100%;
+  padding-top: 40px;
+}
+.container {
+  max-width: 1440px;
+  width: 90%;
+  margin: 0 auto;
+}
+.footer-content {
+  display: flex;
+}
+
+.footer-left {
+  width: 30%;
+  padding-right: 70px;
+}
+.footer-logo {
+  width: 89px;
+  height: 38px;
+}
+.footer-logo img {
+  width: 100%;
+  height: 100%;
+}
+.footer-text {
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 24px;
+  font-weight: 300;
+}
+.footer-social {
+  display: flex;
+  padding-top: 20px;
+}
+.footer-social .icon {
+  margin-right: 20px;
+  width: 32px;
+  height: 32px;
+}
+.footer-right {
+  width: 70%;
+  display: flex;
+  color: #ffffff;
+}
+.footer-right .element {
+  width: 25%;
+}
+.footer-right ul {
+  list-style: none;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+.footer-right a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 100;
+  font-family: "Red Hat Display", sans-serif;
+}
+.text {
+  font-family: "Red Hat Display", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+.footer-right h4 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.footer-right li {
+  padding: 10px 0;
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  color: #ffffff;
+  padding: 40px 0;
+}
+
+@media only screen and (max-width: 500px) {
+  .footer-content {
+    position: relative;
+    padding-top: 50px;
+    flex-direction: column-reverse;
+  }
+  .footer-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .footer-left {
+    width: 100%;
+  }
+  .footer-right {
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  .footer-right .element {
+    width: 50%;
+    margin-bottom: 10px;
+  }
+  .element h4::after {
+    content: url("../../assets/img/arrow-bottom.png");
+    margin-left: 5px;
+  }
+  .footer-social {
+    padding-top: 40px;
+  }
+  .list-item {
+    display: none;
+    transition: all 0.3s step-end;
+  }
+  .list-item.genres,
+  .list-item.company,
+  .list-item.for-you,
+  .list-item.help {
+    display: block;
+  }
+  .footer__bottom {
+    flex-direction: column-reverse;
+  }
+}

@@ -1,0 +1,41 @@
+.intro-wrapper {
+    width: 100%;
+    background-image: linear-gradient(0, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.3)), url("../../assets/img/Bg.png");
+    background-size: 100% 100%;
+    background-color: #000000;
+}
+.intro-container {
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    width: 90%;
+    max-width: 1440px;
+    height: 179px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.intro-img {
+    width: 155px;
+    height: 86px;
+}
+.intro-text {
+    color: #ffffff;
+    font-size: 19px;
+    font-weight: 100;
+    position: absolute;
+    right: 70px;
+}
+
+@media only screen and (max-width: 500px) {
+    .intro-container {
+        height: 113px;
+    }
+    .intro-img {
+        width: 109px;
+        height: 60px;
+    }
+    .intro-text{
+        display: none;
+    }
+}
